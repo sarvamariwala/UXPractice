@@ -1,0 +1,55 @@
+$txtcolor:#dfdf66;
+$fontSize: 20px;
+$age:20;
+
+body
+{
+	background:green;
+	color:white;
+}
+b,i
+{
+	color:red;
+}
+p
+{
+	color :yellow;
+}
+h3
+{
+	color:blue;
+}
+.myclass
+{
+   color:red;
+   font-size:10px;
+}
+/* This comment is
+ * more than one line long
+ * since it uses the CSS comment syntax,
+ * it will appear in the CSS output. */
+
+// These comments are in single line
+// They will not appear in the CSS output,
+// since they use the single-line comment syntax.
+h1
+{
+	 text-align:center;
+}
+// They will not appear in the CSS output,
+
+h1{
+   text-alignment:center;
+   color:$txtcolor;
+   font-size:$fontSize;
+}
+.bool {
+   @if ($age > 10 and $age < 25) {
+      color: yellow;
+   }
+   @else{ color:red;}
+}
+
+@for $i from 1 to 4 {
+   .p#{$i} { padding-left : $i * 10px; }
+}

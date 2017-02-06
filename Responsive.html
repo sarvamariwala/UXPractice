@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+    box-sizing: border-box;
+}
+.header {
+    border: 1px solid red;
+    padding: 15px;
+}
+.menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+.main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: gray;
+    }
+}	
+
+.col-3 {width: 25%; 
+	height:75%;}
+
+.col-9 {width: 75%;}
+
+font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #FFA500;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #00cc;
+}
+.back{
+    background-color: #FFA500;
+}
+</style>
+</head>
+<body>
+
+<div class="back">
+  <h1>India</h1>
+</div>
+<div class="row"></div>
+<div class="col-3 menu">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Beach</li>
+    <li>The Food</li>
+  </ul>
+</div>
+<div class="col-9 main">
+  <h1>The City</h1>
+  <p>Delhi is the capital of the India region on the island of Crete. The city can be divided in two parts, the villages and the modern city.</p>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+<div class="col-3 main header" style="background-color:#00FF00">
+  <h1>The City</h1>
+  <p>Delhi is the capital of the India region on the island of Crete. The city can be divided in two parts, the villages and the modern city.</p>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div> 
+</body>
+</html>
+

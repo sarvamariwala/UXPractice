@@ -1,0 +1,55 @@
+<html>
+   <head>
+      <title>Form Validation</title>
+      <script type="text/javascript">
+        function validate()
+   	{	
+		//alert("ok");
+		$name=document.getElementById("name");
+		$email=document.getElementById("email");
+		$zip=document.getElementById("zip");
+		if($name != "" || $email != "" || $zip != "")
+		{
+			document.writeln("please enter the fields");
+		}
+	}
+      </script>
+   </head>
+   
+   <body>
+      <form name="valid" method = "post" onsubmit="validate();" >
+         <table cellspacing="2" cellpadding="2" border="1">
+            
+            <tr>
+               <td align="right">Name</td>
+               <td><input type="text" name="Name" id="name" /></td>
+            </tr>
+            
+            <tr>
+               <td align="right">EMail</td>
+               <td><input type="text" name="EMail" id="email"/></td>
+            </tr>
+            <tr>
+               <td align="right">Zip Code</td>
+               <td><input type="text" name="Zip" id="zip"/></td>
+            </tr>
+            <tr>
+               <td align="right">Country</td>
+               <td>
+                  <select name="Country" id="country">
+                     <option value="-1" selected>[choose yours]</option>
+                     <option value="1">USA</option>
+                     <option value="2">UK</option>
+                     <option value="3">INDIA</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td align="right"></td>
+               <td><input type="submit" value="Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,17 @@
+<session-config>
+   <session-timeout>2</session-timeout>
+   </session-config>
+
+   <servlet>
+      <servlet-name>SessionCheckServlet</servlet-name>
+      <servlet-class>com.app.web.SessionCheckServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>SessionCheckServlet</servlet-name>
+      <url-pattern>/isActive</url-pattern>
+   </servlet-mapping>
+
+   <welcome-file-list>
+      <welcome-file>index.jsp</welcome-file>
+   </welcome-file-list>
+</web-app>

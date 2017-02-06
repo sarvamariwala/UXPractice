@@ -1,0 +1,42 @@
+body {
+  background: green;
+  color: white; }
+
+b, i {
+  color: red; }
+
+p {
+  color: yellow; }
+
+h3 {
+  color: blue; }
+
+.myclass {
+  color: red;
+  font-size: 10px; }
+
+/* This comment is
+ * more than one line long
+ * since it uses the CSS comment syntax,
+ * it will appear in the CSS output. */
+h1 {
+  text-align: center; }
+
+h1 {
+  text-alignment: center;
+  color: #dfdf66;
+  font-size: 20px; }
+
+.bool {
+  color: yellow; }
+
+.p1 {
+  padding-left: 10px; }
+
+.p2 {
+  padding-left: 20px; }
+
+.p3 {
+  padding-left: 30px; }
+
+/*# sourceMappingURL=style.css.map */

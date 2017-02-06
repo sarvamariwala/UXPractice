@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function()
+	{	
+	    $("p").hover(function()
+            {
+		$(this).css("transition",'0.5s');
+        	$(this).css("font-size",'25px');
+    	     });
+	    $("p").mouseleave(function()
+		{
+			$(this).css("font-size",'15px');
+		});
+	    $("#away").click(function(){
+			$(this).toggle();
+		});
+         });
+</script>
+</head>
+<body>
+<p>If you click on me, I will disappear.</p>
+<p id="away">Click me away!</p>
+<p id="me" >Click me too!</p>
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>HTML Table Header</title>
+</head>
+<style type="text/css">
+         table.one {border-collapse:collapse;}
+         table.two {border-collapse:separate;}
+         td.a {
+            border-style:dotted;
+            border-width:3px;
+            border-color:#000000; 
+            padding: 10px;
+         }
+         td.b {
+            border-style:solid;
+            border-width:3px;
+            border-color:#333333;
+            padding:10px;
+         }
+	td.c {
+            border-collapse:separate;
+            width:400px;
+            border-spacing:10px;
+         }
+      </style>
+      
+<body>
+<table border="1" width="100%" cellspadding="5" cellspacing="5" >
+<tr>
+<th>Name</th>
+<th>Salary</th>
+</tr>
+<tr>
+<td class="a">Ramesh Raman</td>
+<td class="c">5000</td>
+</tr>
+<tr>
+<td class="b">Shabbir Hussein</td>
+<td class="a">7000</td>
+</tr>
+
+</table>
+</body>
+</html>
